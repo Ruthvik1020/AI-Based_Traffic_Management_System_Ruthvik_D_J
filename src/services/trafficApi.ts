@@ -7,3 +7,5 @@ export interface LaneStatePayload {
 	density: "LOW" | "MEDIUM" | "HIGH";
 	densityScore: number;
 }
+export interface PredictionData {
+  lane: LaneDirection;
