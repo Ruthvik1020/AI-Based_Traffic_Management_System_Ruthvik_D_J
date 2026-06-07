@@ -9,3 +9,4 @@ export interface LaneStatePayload {
 }
 export interface PredictionData {
   lane: LaneDirection;
+  projectedQueueLength: number;
