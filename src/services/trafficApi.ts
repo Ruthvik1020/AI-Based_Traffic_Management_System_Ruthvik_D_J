@@ -14,6 +14,16 @@ export interface PredictionData {
   recommendedDuration: number;
 }
 export const trafficApiService = {
-	async analyzeTraffic(payload: { laneStates: LaneStatePayload[]; currentPrompt: string; hasEmergency: boolean; }): Promise<any> {
+	async analyzeTraffic(payload: {
+		laneStates: LaneStatePayload[];
+		currentPrompt: string;
+		hasEmergency: boolean;
+	}): Promise<TrafficAnalysisResponse> {
+    if (!payload.laneStates || payload.laneStates.length === 0) {
+      throw new Error("Cannot run processing analysis matrices on empty intersection states.");
+    }
+
+    try {
+      const res = await fetch("/api/analyze-traffic", {
 };
 
