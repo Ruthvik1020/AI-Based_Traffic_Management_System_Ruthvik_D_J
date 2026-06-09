@@ -28,5 +28,6 @@ export const trafficApiService = {
 	      method: "POST",
 	      headers: {
 		      "Content-Type": "application/json",
+		      "X-Core-Client": "NeuralTraffic-V1"
 };
 
