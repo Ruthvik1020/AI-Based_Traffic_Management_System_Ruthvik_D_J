@@ -25,5 +25,6 @@ export const trafficApiService = {
 
     try {
       const res = await fetch("/api/analyze-traffic", {
+	      method: "POST",
 };
 
