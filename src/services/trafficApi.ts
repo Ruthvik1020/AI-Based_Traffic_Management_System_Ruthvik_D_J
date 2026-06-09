@@ -16,5 +16,8 @@ export interface PredictionData {
 export const trafficApiService = {
 	  async analyzeTraffic(payload: {
     laneStates: LaneStatePayload[];
+    currentPrompt: string;
+    hasEmergency: boolean;
+  }) {
 };
 
