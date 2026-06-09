@@ -14,4 +14,9 @@ export interface PredictionData {
   recommendedDuration: number;
 }
 export const trafficApiService = {
+	async analyzeTraffic() {
+  },
+~
+
 };
+
