@@ -13,3 +13,5 @@ export interface PredictionData {
   confidenceScore: number;
   recommendedDuration: number;
 }
+export const trafficApiService = {
+};
