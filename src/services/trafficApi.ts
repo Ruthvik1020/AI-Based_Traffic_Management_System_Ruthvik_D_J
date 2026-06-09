@@ -30,5 +30,8 @@ export const trafficApiService = {
 		      "Content-Type": "application/json",
 		      "Accept": "application/json",
 		      "X-Core-Client": "NeuralTraffic-V1"
+	},
+	body: JSON.stringify(payload),
+    });
 };
 
