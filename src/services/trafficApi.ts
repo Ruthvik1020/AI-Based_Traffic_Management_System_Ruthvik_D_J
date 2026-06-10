@@ -40,5 +40,12 @@ export const trafficApiService = {
 
      const data = await res.json();
      return data;
-};
 
+     } catch (error: any) {
+      console.error("Critical connection failure identified in AI streaming infrastructure:", error);
+      return {
+        success: false,
+        reportText: `Local Failover Alert: Network query parsing dropped. Reason: ${error.message || "Unknown error"}`
+      };
+    }
+},
