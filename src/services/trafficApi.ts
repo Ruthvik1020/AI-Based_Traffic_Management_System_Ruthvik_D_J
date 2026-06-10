@@ -33,5 +33,12 @@ export const trafficApiService = {
 	},
 	body: JSON.stringify(payload),
     });
+
+    if (!res.ok) {
+        throw new Error(`AI Core returned invalid server status indicator: ${res.status}`);
+     }
+
+     const data = await res.json();
+     return data;
 };
 
