@@ -22,5 +22,5 @@ export interface TrafficAnalysisResponse {
 export interface MetricsSavePayload {
 	laneNorthCount: number;
 	laneEastCount: number;
-
+	laneSouthCount: number;
 }
