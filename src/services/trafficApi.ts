@@ -50,6 +50,4 @@ export const trafficApiService = {
     }
 },
 
-async saveMetrics() {
-  },
-
+async saveMetrics(payload: { laneNorthCount: number; laneEastCount: number; }) {
