@@ -51,3 +51,4 @@ export const trafficApiService = {
 },
 
 async saveMetrics(payload: { laneNorthCount: number; laneEastCount: number; }) {
+	if (payload.normalWait < 0 || payload.aiWait < 0) {
