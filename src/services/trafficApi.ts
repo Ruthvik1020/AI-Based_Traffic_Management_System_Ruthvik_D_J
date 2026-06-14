@@ -54,3 +54,13 @@ async saveMetrics(payload: { laneNorthCount: number; laneEastCount: number; }) {
 	if (payload.normalWait < 0 || payload.aiWait < 0) {
 		throw new Error("Metric constraints violation: operational metrics latency indices cannot be negative entries.");
         }
+
+	try {
+      const res = await fetch("/api/database/save", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-DB-Action": "write-record"
+        },
+        body: JSON.stringify(payload),
+      });
