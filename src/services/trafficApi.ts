@@ -17,4 +17,5 @@ export interface TrafficAnalysisResponse {
 	success: boolean;
 	reportText: string;
 	predictions?: PredictionData[];
+	optimizedTimingConfig?: Record<LaneDirection, number>;
 }
