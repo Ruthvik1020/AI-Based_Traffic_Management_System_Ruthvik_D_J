@@ -14,4 +14,6 @@ export interface PredictionData {
   recommendedDuration: number;
 }
 export interface TrafficAnalysisResponse {
+	success: boolean;
+
 }
