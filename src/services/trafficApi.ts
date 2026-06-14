@@ -31,4 +31,5 @@ export interface MetricsSavePayload {
 export interface DBResponse {
 	success: boolean;
 	entry?: {id: number; timestamp: string;};
+	list?: Array<{ id: number; timestamp: string; aiWait: number }>;
 }
