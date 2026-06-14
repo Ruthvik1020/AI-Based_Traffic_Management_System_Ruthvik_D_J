@@ -1,5 +1,6 @@
 export type LaneDirection = "North" | "East" | "South" | "West";
 export type LightState = "green" | "yellow" | "red";
+
 export interface LaneStatePayload {
 	direction: LaneDirection;
 	light: LightState;
@@ -7,18 +8,21 @@ export interface LaneStatePayload {
 	density: "LOW" | "MEDIUM" | "HIGH";
 	densityScore: number;
 }
+
 export interface PredictionData {
   lane: LaneDirection;
   projectedQueueLength: number;
   confidenceScore: number;
   recommendedDuration: number;
 }
+
 export interface TrafficAnalysisResponse {
 	success: boolean;
 	reportText: string;
 	predictions?: PredictionData[];
 	optimizedTimingConfig?: Record<LaneDirection, number>;
 }
+
 export interface MetricsSavePayload {
 	laneNorthCount: number;
 	laneEastCount: number;
@@ -28,8 +32,10 @@ export interface MetricsSavePayload {
 	aiWait: number;
 	logStr: string;
 }
+
 export interface DBResponse {
 	success: boolean;
 	entry?: {id: number; timestamp: string;};
 	list?: Array<{ id: number; timestamp: string; aiWait: number }>;
 }
+
