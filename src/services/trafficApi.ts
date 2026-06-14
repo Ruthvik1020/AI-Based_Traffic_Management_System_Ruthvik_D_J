@@ -30,4 +30,6 @@ export interface MetricsSavePayload {
 }
 export interface DBResponse {
 	success: boolean;
+	entry?: {
+  };
 }
