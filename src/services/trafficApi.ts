@@ -20,4 +20,5 @@ export interface TrafficAnalysisResponse {
 	optimizedTimingConfig?: Record<LaneDirection, number>;
 }
 export interface MetricsSavePayload {
+	laneNorthCount: number;
 }
