@@ -68,3 +68,8 @@ async saveMetrics(payload: { laneNorthCount: number; laneEastCount: number; }) {
       if (!res.ok) {
         throw new Error(`Database driver interface returned non-OK registration code: ${res.status}`);
       }
+
+      const data: DBResponse = await res.json();
+      return data;
+    }
+
