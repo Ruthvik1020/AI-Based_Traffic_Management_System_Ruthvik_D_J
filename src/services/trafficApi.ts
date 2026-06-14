@@ -52,3 +52,5 @@ export const trafficApiService = {
 
 async saveMetrics(payload: { laneNorthCount: number; laneEastCount: number; }) {
 	if (payload.normalWait < 0 || payload.aiWait < 0) {
+		throw new Error("Metric constraints violation: operational metrics latency indices cannot be negative entries.");
+        }
