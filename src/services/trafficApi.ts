@@ -16,4 +16,5 @@ export interface PredictionData {
 export interface TrafficAnalysisResponse {
 	success: boolean;
 	reportText: string;
+	predictions?: PredictionData[];
 }
