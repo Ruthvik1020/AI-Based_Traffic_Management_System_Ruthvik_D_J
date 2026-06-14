@@ -19,3 +19,5 @@ export interface TrafficAnalysisResponse {
 	predictions?: PredictionData[];
 	optimizedTimingConfig?: Record<LaneDirection, number>;
 }
+export interface MetricsSavePayload {
+}
