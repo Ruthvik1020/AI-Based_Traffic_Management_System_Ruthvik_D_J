@@ -73,3 +73,5 @@ async saveMetrics(payload: { laneNorthCount: number; laneEastCount: number; }) {
       return data;
     }
 
+    catch (error: any) {
+
