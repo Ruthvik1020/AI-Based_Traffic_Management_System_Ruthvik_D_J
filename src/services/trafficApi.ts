@@ -74,4 +74,6 @@ async saveMetrics(payload: { laneNorthCount: number; laneEastCount: number; }) {
     }
 
     catch (error: any) {
+	    console.error("Local SQLite persistence tracking sub-system execution was rejected:", error);
+
 
