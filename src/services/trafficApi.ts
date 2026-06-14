@@ -26,4 +26,5 @@ export interface MetricsSavePayload {
 	laneWestCount: number;
 	normalWait: number;
 	aiWait: number;
+	logStr: string;
 }
