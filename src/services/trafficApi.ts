@@ -28,3 +28,5 @@ export interface MetricsSavePayload {
 	aiWait: number;
 	logStr: string;
 }
+export interface DBResponse {
+}
