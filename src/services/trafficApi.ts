@@ -30,5 +30,5 @@ export interface MetricsSavePayload {
 }
 export interface DBResponse {
 	success: boolean;
-	entry?: {id: number;};
+	entry?: {id: number; timestamp: string;};
 }
