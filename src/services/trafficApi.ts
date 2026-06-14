@@ -64,3 +64,7 @@ async saveMetrics(payload: { laneNorthCount: number; laneEastCount: number; }) {
         },
         body: JSON.stringify(payload),
       });
+
+      if (!res.ok) {
+        throw new Error(`Database driver interface returned non-OK registration code: ${res.status}`);
+      }
