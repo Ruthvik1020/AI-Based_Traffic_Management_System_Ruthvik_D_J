@@ -25,4 +25,5 @@ export interface MetricsSavePayload {
 	laneSouthCount: number;
 	laneWestCount: number;
 	normalWait: number;
+	aiWait: number;
 }
