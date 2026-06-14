@@ -29,4 +29,5 @@ export interface MetricsSavePayload {
 	logStr: string;
 }
 export interface DBResponse {
+	success: boolean;
 }
