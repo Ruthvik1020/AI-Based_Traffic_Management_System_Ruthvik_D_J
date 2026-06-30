@@ -85,18 +85,32 @@ export const trafficApiService = {
       throw new Error(`Transaction failed: ${error.message}`);
     }
   },
+
   /**
-   * Pulls past optimization logs from the history charts
+   * Collects all historical optimization records from SQLite registry
    */
   async fetchHistory(): Promise<DBResponse> {
-	  try {
-		  const res = await fetch("/api/database/get");
-		  return await res.json();
-    } 
-    catch (error) {
-	    return { 
-		    success: false, 
-		    list: [] 
-	    };
+    try {
+      const res = await fetch("/api/database/get", {
+        method: "GET",
+        headers: {
+          "Accept": "application/json",
+          "X-DB-Action": "read-all"
+        }
+      });
+
+      if (!res.ok) {
+        throw new Error(`Historical lookup process returned error code: ${res.status}`);
+      }
+
+      const data: DBResponse = await res.json();
+      return data;
+    } catch (error: any) {
+      console.error("Registry system read failed to access stored table matrix rows:", error);
+      return {
+        success: false,
+        list: []
+      };
     }
   }
+};
