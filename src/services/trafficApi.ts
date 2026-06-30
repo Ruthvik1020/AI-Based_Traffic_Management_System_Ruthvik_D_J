@@ -85,3 +85,5 @@ export const trafficApiService = {
       throw new Error(`Transaction failed: ${error.message}`);
     }
   },
+  async fetchHistory(): Promise<DBResponse> {
+  }
