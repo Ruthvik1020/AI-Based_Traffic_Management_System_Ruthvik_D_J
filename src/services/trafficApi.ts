@@ -85,6 +85,9 @@ export const trafficApiService = {
       throw new Error(`Transaction failed: ${error.message}`);
     }
   },
+  /**
+   * Pulls past optimization logs from the history charts
+   */
   async fetchHistory(): Promise<DBResponse> {
 	  try {
 		  const res = await fetch("/api/database/get");
