@@ -86,4 +86,7 @@ export const trafficApiService = {
     }
   },
   async fetchHistory(): Promise<DBResponse> {
+	  try {
+    } catch (error) {
+    }
   }
