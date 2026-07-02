@@ -1,10 +1,10 @@
-# 🌐 Traffic API Service Module
+# Traffic API Service Module
 
 The **Traffic API Service** acts as the communication layer between the frontend AI Traffic Control System and the backend server. It is responsible for sending traffic information for AI analysis, storing traffic metrics in the database, and retrieving historical optimization records.
 
 ---
 
-# 📌 Module Overview
+#  Module Overview
 
 The `trafficApi.ts` service provides a centralized interface for all backend API requests. Instead of making API calls directly from React components, all communication is handled through this service.
 
@@ -17,7 +17,7 @@ This improves:
 
 ---
 
-# 📁 File Location
+#  File Location
 
 ```
 src/
@@ -27,7 +27,7 @@ src/
 
 ---
 
-# 🚀 Responsibilities
+#  Responsibilities
 
 The Traffic API Service is responsible for:
 
@@ -40,7 +40,7 @@ The Traffic API Service is responsible for:
 
 ---
 
-# 📋 Type Definitions
+#  Type Definitions
 
 ## LaneDirection
 
@@ -141,7 +141,7 @@ Contains
 
 ---
 
-# ⚙️ API Functions
+#  API Functions
 
 ---
 
@@ -256,7 +256,7 @@ Returns
 
 ---
 
-# 🔄 API Workflow
+#  API Workflow
 
 ```
 Traffic Dashboard
@@ -292,7 +292,7 @@ Frontend Dashboard
 
 ---
 
-# 🛡 Error Handling
+#  Error Handling
 
 The service includes robust error handling for:
 
@@ -310,7 +310,7 @@ When an error occurs:
 
 ---
 
-# 💻 Technologies Used
+#  Technologies Used
 
 - TypeScript
 - Fetch API
@@ -321,7 +321,7 @@ When an error occurs:
 
 ---
 
-# 📈 Advantages
+#  Advantages
 
 - Centralized API communication.
 - Type-safe request and response handling.
@@ -332,7 +332,7 @@ When an error occurs:
 
 ---
 
-# 🔮 Future Enhancements
+#  Future Enhancements
 
 - Real-time WebSocket communication.
 - JWT authentication.
@@ -344,7 +344,7 @@ When an error occurs:
 
 ---
 
-# 👨‍💻 My Contribution
+#  My Contribution
 
 As part of the AI Traffic Management System, I implemented the **Traffic API Service Module**.
 
@@ -360,6 +360,6 @@ My responsibilities included:
 
 ---
 
-# 📄 Conclusion
+#  Conclusion
 
 The **Traffic API Service Module** serves as the communication bridge between the frontend application, AI analysis engine, and backend database. By centralizing all API requests, the module improves maintainability, scalability, and reliability while enabling intelligent traffic management through AI-assisted decision-making.
