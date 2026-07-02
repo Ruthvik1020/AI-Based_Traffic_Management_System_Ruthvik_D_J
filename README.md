@@ -1,6 +1,6 @@
 # Traffic API Service Module
 
-The **Traffic API Service** acts as the communication layer between the frontend AI Traffic Control System and the backend server. It is responsible for sending traffic information for AI analysis, storing traffic metrics in the database, and retrieving historical optimization records.
+The **Traffic API Service** acts as the communication layer between the frontend AI Traffic Control System and the backend server. It is responsible for sending traffic information for AI analysed, storing traffic metrics in the database, and retrieving historical optimization records.
 
 ---
 
