@@ -5,7 +5,7 @@ export interface LaneStatePayload {
 	direction: LaneDirection;
 	light: LightState;
 	vehicleCount: number;
-	density: "LOW" | "MEDIUM" | "HIGH";
+	density: "MEDIUM" | "LOW" | "HIGH";
 	densityScore: number;
 }
 
